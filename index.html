@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- font-awsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- daisyui-CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .font-adlam{
+        font-family: "ADLaM Display", serif;
+    }
+    .font-sora{
+        font-family: "Sora", serif;
+    }
+</style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            petgold: '#FFDC26',
+          }
+        }
+      }
+    }
+  </script>
+    <title>Pet-house</title>
+</head>
+<body class="font-sora">
+    <!-- header-section -->
+     <header>
+        <nav>
+            <div class="navbar bg-base-100 px-0 lg:px-32 w-full">
+                <div class="navbar-start">
+                  <img src="c1-assets/logo-header.png" alt="logo-browse4pets">
+                  <a class="btn btn-ghost text-xl">Browse<span class="text-petgold">4</span>Pets</a>
+                </div>
+                <div class="navbar-center text-xl hidden lg:flex">
+                  <ul class="menu text-xl menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-3">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn border-petgold bg-white text-black p-4 hidden lg:flex">Login</a>
+                  <a class="btn bg-petgold text-black p-4 hidden lg:flex">Register</a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-black"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16m-16 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-24 p-2 shadow">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+     </header>
+    <!-- main-section -->
+     <main>
+        <div class="flex flex-col lg:flex-row pt-8 lg:pt-20 px-4 sm:px-6 lg:px-32 w-full">
+            <!-- text-contant -->
+             <div> <h3 class="font-adlam text-3xl lg:text-5xl">Pamper Your Pet,<br>Because They Deserve<br>the Best.</h3>
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn bg-petgold text-black p-4 lg:flex">Find a pet</button>
+
+             </div>
+             <!-- image-contant -->
+              <div>
+                <img src="c1-assets/cat-big.png" alt="">
+              </div>
+        </div>
+        
+     </main>
+     <!-- footer-section -->
+     <footer>
+
+     </footer>
+    
+</body>
+</html>
